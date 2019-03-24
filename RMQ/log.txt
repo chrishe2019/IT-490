@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "receive_logs.py", line 26, in <module>
+    channel.start_consuming()
+  File "/home/christopher/.local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 1822, in start_consuming
+    self.connection.process_data_events(time_limit=None)
+  File "/home/christopher/.local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 749, in process_data_events
+    self._flush_output(common_terminator)
+  File "/home/christopher/.local/lib/python3.6/site-packages/pika/adapters/blocking_connection.py", line 458, in _flush_output
+    self._impl.ioloop.poll()
+  File "/home/christopher/.local/lib/python3.6/site-packages/pika/adapters/select_connection.py", line 495, in poll
+    self._poller.poll()
+  File "/home/christopher/.local/lib/python3.6/site-packages/pika/adapters/select_connection.py", line 1102, in poll
+    events = self._poll.poll(self._get_max_wait())
+KeyboardInterrupt
